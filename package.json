@@ -1,0 +1,11 @@
+{
+  "name": "dmc-logger",
+  "version": "0.1.0",
+  "description": "David's logger utility",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "david.mcelroy.online",
+  "license": "SEE LICENSE IN LICENSE"
+}
