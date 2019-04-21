@@ -7,5 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "david.mcelroy.online",
-  "license": "SEE LICENSE IN LICENSE"
+  "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmcpton/dmc-logger.git"
+  },
+  "keywords": [
+    "logger",
+    "personal"
+  ],
+  "bugs": {
+    "url": "https://github.com/dmcpton/dmc-logger/issues"
+  },
+  "homepage": "https://github.com/dmcpton/dmc-logger#readme"
 }
