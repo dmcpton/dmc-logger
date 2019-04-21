@@ -1,3 +1,5 @@
+const fs = require('fs');
+
 function Logger() {
 	
 	// writestreams default to null
@@ -33,7 +35,14 @@ Logger.threshholdNames = [
 
 Logger.prependDate = function (messageStr) {
 	var nowDate = new Date();
-	return nowDate.toISOString().substring(0, 10) + ' ' + nowDate.toISOString().substring(11, 19) + ' ' + messageString;
+	return nowDate.toISOString().substring(0, 10) + ' ' + nowDate.toISOString().substring(11, 19) + ' ' + messageStr;
+}
+
+Logger.generateStream = function (name, path) {
+	if(!path) {
+		path = './'
+	}
+	return fs.createWriteStream(path + name, {flags:'a'});
 }
 
 // setters
